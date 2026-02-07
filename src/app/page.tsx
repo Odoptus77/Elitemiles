@@ -45,13 +45,13 @@ export default function HomePage() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href="/learn"
-              className="rounded-full bg-[color:var(--em-gold)] px-6 py-3 text-center text-sm font-semibold text-black transition hover:brightness-110"
+              className="rounded-full bg-[color:var(--em-gold)] px-6 py-3 text-center text-sm font-semibold text-white transition hover:brightness-110"
             >
               Start learning
             </Link>
             <Link
               href="/tools/redemption-value"
-              className="rounded-full border border-white/15 bg-black/20 px-6 py-3 text-center text-sm font-semibold text-white transition hover:border-white/25"
+              className="rounded-full border border-[color:var(--em-border)] bg-white/50 px-6 py-3 text-center text-sm font-semibold text-[color:var(--em-fg)] transition hover:bg-white/70"
             >
               Calculate a redemption
             </Link>

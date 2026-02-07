@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand */
-  --em-gold: #cfae70;
-  --em-emerald: #0f3d33;
+  /* Brand (Serious Blue + White) */
+  --em-gold: #1e3a8a; /* repurposed: primary accent (navy) */
+  --em-emerald: #60a5fa; /* repurposed: secondary accent (soft blue) */
 
-  /* Theme (dark by default) */
-  --em-bg: #070707;
-  --em-fg: #f3f1ec;
-  --em-muted: rgba(243, 241, 236, 0.7);
-  --em-card: rgba(255, 255, 255, 0.04);
-  --em-border: rgba(255, 255, 255, 0.10);
+  /* Theme (light by default) */
+  --em-bg: #ffffff;
+  --em-fg: #0b1220;
+  --em-muted: rgba(11, 18, 32, 0.72);
+  --em-card: rgba(30, 58, 138, 0.035);
+  --em-border: rgba(11, 18, 32, 0.10);
 }
 
 @theme inline {
