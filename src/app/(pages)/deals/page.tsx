@@ -23,9 +23,9 @@ export default function DealsPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.32em] text-white/50">Deals</p>
+        <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Deals</p>
         <h1 className="font-display text-4xl">Sweet spots & promos</h1>
-        <p className="max-w-2xl text-white/65">
+        <p className="max-w-2xl text-[color:var(--em-muted)]">
           Curated redemptions and opportunities you can actually use from Germany / DACH.
           (Manual entries in v0.)
         </p>
@@ -41,22 +41,22 @@ export default function DealsPage() {
               {d.tags.map((t) => (
                 <span
                   key={t}
-                  className="rounded-full border border-white/10 bg-black/20 px-2.5 py-1 text-xs text-white/70"
+                  className="rounded-full border border-[color:var(--em-border)] bg-white px-2.5 py-1 text-xs text-[color:var(--em-muted)]"
                 >
                   {t}
                 </span>
               ))}
             </div>
-            <h2 className="mt-4 text-lg text-white/90">{d.title}</h2>
+            <h2 className="mt-4 text-lg text-[color:var(--em-fg)]">{d.title}</h2>
             <div className="mt-3 text-2xl font-semibold text-[color:var(--em-gold)]">
               {d.points}
             </div>
-            <p className="mt-3 text-sm text-white/60">{d.note}</p>
+            <p className="mt-3 text-sm text-[color:var(--em-muted)]">{d.note}</p>
           </article>
         ))}
       </div>
 
-      <div className="text-xs text-white/40">
+      <div className="text-xs text-[color:var(--em-muted)]">
         Next: filters (airline/hotel/region/cabin), then Supabase-backed entries + admin UI.
       </div>
     </div>

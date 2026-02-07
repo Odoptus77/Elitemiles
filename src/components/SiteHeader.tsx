@@ -18,7 +18,7 @@ export function SiteHeader() {
           <span className="font-display text-xl tracking-[0.12em] text-[color:var(--em-fg)]">
             EliteMiles
           </span>
-          <span className="text-xs uppercase tracking-[0.22em] text-white/50 group-hover:text-white/70">
+          <span className="text-xs uppercase tracking-[0.22em] text-[color:var(--em-muted)] group-hover:text-[color:var(--em-fg)]">
             DACH
           </span>
         </Link>

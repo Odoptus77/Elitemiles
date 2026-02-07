@@ -60,9 +60,9 @@ export default function ProgramsPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.32em] text-white/50">Programs</p>
+        <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Programs</p>
         <h1 className="font-display text-4xl">Loyalty ecosystems</h1>
-        <p className="max-w-2xl text-white/65">
+        <p className="max-w-2xl text-[color:var(--em-muted)]">
           The goal isn’t to collect everything — it’s to pick the right ecosystem for your routes,
           your spending, and your travel style.
         </p>
@@ -78,10 +78,10 @@ export default function ProgramsPage() {
 
             <div className="mt-5 grid gap-6 md:grid-cols-2">
               <div>
-                <div className="text-xs uppercase tracking-[0.28em] text-white/50">
+                <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">
                   Best uses
                 </div>
-                <ul className="mt-3 space-y-2 text-sm text-white/65">
+                <ul className="mt-3 space-y-2 text-sm text-[color:var(--em-muted)]">
                   {p.bestUses.map((b) => (
                     <li key={b} className="flex gap-2">
                       <span className="mt-[0.45rem] h-1 w-1 rounded-full bg-[color:var(--em-gold)]" />
@@ -92,10 +92,10 @@ export default function ProgramsPage() {
               </div>
 
               <div>
-                <div className="text-xs uppercase tracking-[0.28em] text-white/50">
+                <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">
                   Transfer notes
                 </div>
-                <ul className="mt-3 space-y-2 text-sm text-white/65">
+                <ul className="mt-3 space-y-2 text-sm text-[color:var(--em-muted)]">
                   {p.transferNotes.map((b) => (
                     <li key={b} className="flex gap-2">
                       <span className="mt-[0.45rem] h-1 w-1 rounded-full bg-[color:var(--em-emerald)]" />
@@ -109,7 +109,7 @@ export default function ProgramsPage() {
         ))}
       </div>
 
-      <div className="text-xs text-white/40">
+      <div className="text-xs text-[color:var(--em-muted)]">
         Next: dedicated program pages + search + structured fields (earn/redeem rates, alliances,
         transfer partners).
       </div>

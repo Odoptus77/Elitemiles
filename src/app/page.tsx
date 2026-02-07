@@ -28,7 +28,7 @@ export default function HomePage() {
         </div>
 
         <div className="relative max-w-2xl space-y-6">
-          <p className="text-xs uppercase tracking-[0.32em] text-white/60">
+          <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">
             Luxury travel through points & miles
           </p>
           <h1 className="font-display text-4xl leading-tight md:text-6xl">
@@ -51,7 +51,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/tools/redemption-value"
-              className="rounded-full border border-[color:var(--em-border)] bg-white/50 px-6 py-3 text-center text-sm font-semibold text-[color:var(--em-fg)] transition hover:bg-white/70"
+              className="rounded-full border border-[color:var(--em-border)] bg-white px-6 py-3 text-center text-sm font-semibold text-[color:var(--em-fg)] shadow-sm transition hover:bg-white/80"
             >
               Calculate a redemption
             </Link>
@@ -61,9 +61,9 @@ export default function HomePage() {
 
       <section className="grid gap-6 md:grid-cols-3">
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
-          <div className="text-xs uppercase tracking-[0.28em] text-white/50">Learn</div>
+          <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">Learn</div>
           <h2 className="mt-2 font-display text-2xl">Beginner → expert path</h2>
-          <p className="mt-2 text-sm text-white/65">
+          <p className="mt-2 text-sm text-[color:var(--em-muted)]">
             Points & miles basics, alliances, transfer partners, and booking walkthroughs.
           </p>
           <Link className="mt-4 inline-block text-sm text-[color:var(--em-gold)]" href="/learn">
@@ -72,9 +72,9 @@ export default function HomePage() {
         </div>
 
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
-          <div className="text-xs uppercase tracking-[0.28em] text-white/50">Tools</div>
+          <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">Tools</div>
           <h2 className="mt-2 font-display text-2xl">Make better redemptions</h2>
-          <p className="mt-2 text-sm text-white/65">
+          <p className="mt-2 text-sm text-[color:var(--em-muted)]">
             Value calculator + transfer partner paths (v0). More coming.
           </p>
           <Link
@@ -86,9 +86,9 @@ export default function HomePage() {
         </div>
 
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
-          <div className="text-xs uppercase tracking-[0.28em] text-white/50">Programs</div>
+          <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">Programs</div>
           <h2 className="mt-2 font-display text-2xl">Choose the right ecosystem</h2>
-          <p className="mt-2 text-sm text-white/65">
+          <p className="mt-2 text-sm text-[color:var(--em-muted)]">
             Miles & More, Flying Blue, Avios, Hilton, Marriott — explained for DACH.
           </p>
           <Link
@@ -103,12 +103,12 @@ export default function HomePage() {
       <section className="space-y-6">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <div className="text-xs uppercase tracking-[0.28em] text-white/50">
+            <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">
               Featured sweet spots
             </div>
             <h2 className="mt-2 font-display text-3xl">This week’s picks</h2>
           </div>
-          <Link href="/deals" className="text-sm text-white/70 hover:text-white">
+          <Link href="/deals" className="text-sm text-[color:var(--em-muted)] hover:text-[color:var(--em-fg)]">
             View all deals
           </Link>
         </div>
@@ -119,16 +119,16 @@ export default function HomePage() {
               key={d.title}
               className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6"
             >
-              <div className="text-sm text-white/90">{d.title}</div>
+              <div className="text-sm text-[color:var(--em-fg)]">{d.title}</div>
               <div className="mt-3 flex items-baseline justify-between">
                 <div className="text-2xl font-semibold text-[color:var(--em-gold)]">
                   {d.points}
                 </div>
-                <div className="text-xs uppercase tracking-[0.22em] text-white/45">
+                <div className="text-xs uppercase tracking-[0.22em] text-[color:var(--em-muted)]">
                   points
                 </div>
               </div>
-              <p className="mt-3 text-sm text-white/60">{d.note}</p>
+              <p className="mt-3 text-sm text-[color:var(--em-muted)]">{d.note}</p>
             </div>
           ))}
         </div>

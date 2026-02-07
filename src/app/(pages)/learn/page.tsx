@@ -32,9 +32,9 @@ export default function LearnPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.32em] text-white/50">Learn</p>
+        <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Learn</p>
         <h1 className="font-display text-4xl">Beginner-friendly guides</h1>
-        <p className="max-w-2xl text-white/65">
+        <p className="max-w-2xl text-[color:var(--em-muted)]">
           Start simple, build confidence, then get strategic. This is the EliteMiles learning path
           for Germany / DACH.
         </p>
@@ -47,7 +47,7 @@ export default function LearnPage() {
             className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6"
           >
             <h2 className="font-display text-2xl">{g.title}</h2>
-            <ul className="mt-4 space-y-2 text-sm text-white/65">
+            <ul className="mt-4 space-y-2 text-sm text-[color:var(--em-muted)]">
               {g.bullets.map((b) => (
                 <li key={b} className="flex gap-2">
                   <span className="mt-[0.45rem] h-1 w-1 rounded-full bg-[color:var(--em-gold)]" />
@@ -55,7 +55,7 @@ export default function LearnPage() {
                 </li>
               ))}
             </ul>
-            <div className="mt-5 text-xs text-white/40">(MDX articles next)</div>
+            <div className="mt-5 text-xs text-[color:var(--em-muted)]">(MDX articles next)</div>
           </article>
         ))}
       </div>

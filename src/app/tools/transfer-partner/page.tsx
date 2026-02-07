@@ -54,9 +54,9 @@ export default function TransferPartnerPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.32em] text-white/50">Tool</p>
+        <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Tool</p>
         <h1 className="font-display text-4xl">Transfer Partner Optimizer (Basic)</h1>
-        <p className="max-w-2xl text-white/65">
+        <p className="max-w-2xl text-[color:var(--em-muted)]">
           MVP version: a curated rules list (Germany/DACH-oriented). Next we turn this into a
           structured database with more currencies and partner logic.
         </p>
@@ -65,12 +65,12 @@ export default function TransferPartnerPage() {
       <div className="grid gap-6 md:grid-cols-2">
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
           <div className="grid gap-4">
-            <label className="grid gap-2 text-sm text-white/70">
+            <label className="grid gap-2 text-sm text-[color:var(--em-muted)]">
               Points currency
               <select
                 value={from}
                 onChange={(e) => setFrom(e.target.value as Currency)}
-                className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none focus:border-white/20"
+                className="rounded-xl border border-[color:var(--em-border)] bg-white px-4 py-3 text-sm text-[color:var(--em-fg)] outline-none focus:border-[color:var(--em-gold)]/40"
               >
                 {currencies.map((c) => (
                   <option key={c} value={c}>
@@ -80,35 +80,35 @@ export default function TransferPartnerPage() {
               </select>
             </label>
 
-            <label className="grid gap-2 text-sm text-white/70">
+            <label className="grid gap-2 text-sm text-[color:var(--em-muted)]">
               Target program (optional)
               <input
                 value={target}
                 onChange={(e) => setTarget(e.target.value)}
                 placeholder="e.g. Flying Blue"
-                className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-white/35 outline-none focus:border-white/20"
+                className="rounded-xl border border-[color:var(--em-border)] bg-white px-4 py-3 text-sm text-[color:var(--em-fg)] placeholder:text-[color:var(--em-muted)] outline-none focus:border-[color:var(--em-gold)]/40"
               />
             </label>
           </div>
         </div>
 
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
-          <div className="text-xs uppercase tracking-[0.28em] text-white/50">Paths</div>
+          <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">Paths</div>
 
           <div className="mt-4 space-y-3">
             {results.length === 0 ? (
-              <div className="text-sm text-white/60">No paths found yet for that filter.</div>
+              <div className="text-sm text-[color:var(--em-muted)]">No paths found yet for that filter.</div>
             ) : (
               results.map((p, idx) => (
                 <div
                   key={idx}
-                  className="rounded-xl border border-white/10 bg-black/25 p-4"
+                  className="rounded-xl border border-[color:var(--em-border)] bg-white p-4"
                 >
-                  <div className="text-sm text-white/80">
-                    <span className="text-white/60">{p.from}</span> →{" "}
+                  <div className="text-sm text-[color:var(--em-fg)]">
+                    <span className="text-[color:var(--em-muted)]">{p.from}</span> →{" "}
                     <span className="font-semibold text-[color:var(--em-gold)]">{p.to}</span>
                   </div>
-                  <ul className="mt-3 space-y-1 text-sm text-white/60">
+                  <ul className="mt-3 space-y-1 text-sm text-[color:var(--em-muted)]">
                     {p.notes.map((n) => (
                       <li key={n}>• {n}</li>
                     ))}
@@ -117,7 +117,7 @@ export default function TransferPartnerPage() {
               ))
             )}
 
-            <div className="pt-2 text-xs text-white/40">
+            <div className="pt-2 text-xs text-[color:var(--em-muted)]">
               Next: Supabase-backed rules + more currencies + partner airline use-cases.
             </div>
           </div>
