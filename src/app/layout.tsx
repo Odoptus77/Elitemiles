@@ -18,11 +18,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "EliteMiles — Luxury travel through points & miles",
+    default: "EliteMiles — Luxusreisen mit Punkten & Meilen",
     template: "%s — EliteMiles",
   },
   description:
-    "Beginner-friendly points & miles strategies for luxury flights and hotels (Germany / DACH).",
+    "Verständliche Points-&-Miles-Strategien für Luxusflüge und Hotels (Deutschland / DACH).",
 };
 
 export default function RootLayout({

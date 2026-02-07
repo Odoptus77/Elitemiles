@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const nav = [
-  { href: "/", label: "Home" },
-  { href: "/learn", label: "Learn" },
+  { href: "/", label: "Start" },
+  { href: "/learn", label: "Lernen" },
   { href: "/deals", label: "Deals" },
-  { href: "/programs", label: "Programs" },
+  { href: "/programs", label: "Programme" },
   { href: "/tools", label: "Tools" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "Über uns" },
   { href: "/newsletter", label: "Newsletter" },
 ];
 
@@ -40,7 +40,7 @@ export function SiteHeader() {
             href="/tools/redemption-value"
             className="rounded-full bg-[color:var(--em-gold)] px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110"
           >
-            Value Calculator
+            Einlösewert-Rechner
           </Link>
         </div>
       </div>

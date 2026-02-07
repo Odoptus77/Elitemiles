@@ -29,31 +29,31 @@ export default function HomePage() {
 
         <div className="relative max-w-2xl space-y-6">
           <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">
-            Luxury travel through points & miles
+            Luxusreisen mit Punkten & Meilen
           </p>
           <h1 className="font-display text-4xl leading-tight md:text-6xl">
-            Fly business.
+            Business fliegen.
             <br />
-            Stay five-star.
+            Fünf Sterne.
             <br />
-            Pay economy.
+            Economy zahlen.
           </h1>
           <p className="text-lg text-[color:var(--em-muted)]">
-            EliteMiles turns complex loyalty programs into clear, actionable strategies
-            for travelers in Germany / DACH — with tools, guides, and curated sweet spots.
+            EliteMiles macht Bonusprogramme verständlich: klare, umsetzbare Strategien
+            für Reisende in Deutschland / DACH — mit Tools, Guides und kuratierten Sweet Spots.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href="/learn"
               className="rounded-full bg-[color:var(--em-gold)] px-6 py-3 text-center text-sm font-semibold text-white transition hover:brightness-110"
             >
-              Start learning
+              Jetzt starten
             </Link>
             <Link
               href="/tools/redemption-value"
               className="rounded-full border border-[color:var(--em-border)] bg-white px-6 py-3 text-center text-sm font-semibold text-[color:var(--em-fg)] shadow-sm transition hover:bg-white/80"
             >
-              Calculate a redemption
+              Einlösen berechnen
             </Link>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function HomePage() {
             Points & miles basics, alliances, transfer partners, and booking walkthroughs.
           </p>
           <Link className="mt-4 inline-block text-sm text-[color:var(--em-gold)]" href="/learn">
-            Browse guides →
+            Guides ansehen →
           </Link>
         </div>
 
@@ -81,7 +81,7 @@ export default function HomePage() {
             className="mt-4 inline-block text-sm text-[color:var(--em-gold)]"
             href="/tools"
           >
-            Explore tools →
+            Tools öffnen →
           </Link>
         </div>
 
@@ -95,7 +95,7 @@ export default function HomePage() {
             className="mt-4 inline-block text-sm text-[color:var(--em-gold)]"
             href="/programs"
           >
-            Compare programs →
+            Programme vergleichen →
           </Link>
         </div>
       </section>
@@ -104,12 +104,12 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">
-              Featured sweet spots
+              Ausgewählte Sweet Spots
             </div>
             <h2 className="mt-2 font-display text-3xl">This week’s picks</h2>
           </div>
           <Link href="/deals" className="text-sm text-[color:var(--em-muted)] hover:text-[color:var(--em-fg)]">
-            View all deals
+            Alle Deals
           </Link>
         </div>
 

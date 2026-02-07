@@ -7,12 +7,12 @@ export function SiteFooter() {
         <div className="space-y-2">
           <div className="font-display tracking-[0.12em] text-[color:var(--em-fg)]">EliteMiles</div>
           <p className="text-sm text-[color:var(--em-muted)]">
-            Beginner-friendly points & miles strategies for luxury travel in Germany / DACH.
+            Verständliche Points-&-Miles-Strategien für Luxusreisen in Deutschland / DACH.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[color:var(--em-muted)] md:justify-end">
           <Link className="hover:text-[color:var(--em-fg)]" href="/about">
-            About
+            Über uns
           </Link>
           <Link className="hover:text-[color:var(--em-fg)]" href="/newsletter">
             Newsletter
@@ -26,7 +26,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="px-4 pb-10 text-center text-xs text-[color:var(--em-muted)]">
-        © {new Date().getFullYear()} EliteMiles. Not affiliated with airlines, banks, or loyalty programs.
+        © {new Date().getFullYear()} EliteMiles. Keine Verbindung zu Airlines, Banken oder Bonusprogrammen.
       </div>
     </footer>
   );

@@ -35,9 +35,9 @@ export default function NewsletterPage() {
     <div className="space-y-8">
       <header className="space-y-3">
         <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Newsletter</p>
-        <h1 className="font-display text-4xl">Get sweet spots in your inbox</h1>
+        <h1 className="font-display text-4xl">Sweet Spots per E‑Mail</h1>
         <p className="max-w-2xl text-[color:var(--em-muted)]">
-          Weekly: beginner-friendly guides + curated redemptions for Germany / DACH.
+          Wöchentlich: Guides für Einsteiger + kuratierte Einlösungen für Deutschland / DACH.
         </p>
       </header>
 
@@ -56,26 +56,26 @@ export default function NewsletterPage() {
             disabled={status === "loading"}
             className="rounded-xl bg-[color:var(--em-gold)] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110 disabled:opacity-60"
           >
-            {status === "loading" ? "Subscribing…" : "Subscribe"}
+            {status === "loading" ? "Wird abonniert…" : "Abonnieren"}
           </button>
         </form>
 
         {status === "ok" ? (
           <p className="mt-3 text-sm text-[color:var(--em-fg)]">
-            Check your inbox — you may need to confirm your subscription.
+            Bitte prüfe dein Postfach – ggf. musst du das Abo bestätigen.
           </p>
         ) : status === "error" ? (
           <p className="mt-3 text-sm text-red-200">{error}</p>
         ) : (
           <p className="mt-3 text-xs text-[color:var(--em-muted)]">
-            We use Mailchimp (free plan). No spam — unsubscribe anytime.
+            Wir nutzen Mailchimp (Free). Kein Spam – jederzeit abbestellbar.
           </p>
         )}
       </div>
 
       <div className="text-xs text-[color:var(--em-muted)]">
-        Dev note: configure Mailchimp env vars (see <code>.env.example</code>) for this to work in
-        production.
+        Hinweis: Damit das in Produktion funktioniert, müssen Mailchimp-Env-Vars gesetzt werden
+        (siehe <code>.env.example</code>).
       </div>
     </div>
   );

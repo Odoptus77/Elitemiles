@@ -33,10 +33,10 @@ export default function LearnPage() {
     <div className="space-y-8">
       <header className="space-y-3">
         <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Learn</p>
-        <h1 className="font-display text-4xl">Beginner-friendly guides</h1>
+        <h1 className="font-display text-4xl">Guides für Einsteiger</h1>
         <p className="max-w-2xl text-[color:var(--em-muted)]">
-          Start simple, build confidence, then get strategic. This is the EliteMiles learning path
-          for Germany / DACH.
+          Einfach starten, Sicherheit gewinnen, dann strategisch werden – der EliteMiles Lernpfad
+          für Deutschland / DACH.
         </p>
       </header>
 

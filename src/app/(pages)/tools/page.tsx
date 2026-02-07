@@ -18,9 +18,9 @@ export default function ToolsPage() {
     <div className="space-y-8">
       <header className="space-y-3">
         <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Tools</p>
-        <h1 className="font-display text-4xl">Practical calculators</h1>
+        <h1 className="font-display text-4xl">Praktische Tools</h1>
         <p className="max-w-2xl text-[color:var(--em-muted)]">
-          The MVP focuses on tools that help you make better decisions quickly.
+          Das MVP fokussiert Tools, mit denen du schnell bessere Entscheidungen triffst.
         </p>
       </header>
 
@@ -34,7 +34,7 @@ export default function ToolsPage() {
             <h2 className="font-display text-2xl">{t.title}</h2>
             <p className="mt-2 text-sm text-[color:var(--em-muted)]">{t.desc}</p>
             <div className="mt-5 text-sm text-[color:var(--em-gold)]">
-              Open →
+              Öffnen →
             </div>
           </Link>
         ))}

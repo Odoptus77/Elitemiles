@@ -61,10 +61,10 @@ export default function ProgramsPage() {
     <div className="space-y-8">
       <header className="space-y-3">
         <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Programs</p>
-        <h1 className="font-display text-4xl">Loyalty ecosystems</h1>
+        <h1 className="font-display text-4xl">Bonusprogramme</h1>
         <p className="max-w-2xl text-[color:var(--em-muted)]">
-          The goal isn’t to collect everything — it’s to pick the right ecosystem for your routes,
-          your spending, and your travel style.
+          Ziel ist nicht, alles zu sammeln – sondern das passende Programm für deine Strecken,
+          dein Ausgabeverhalten und deinen Reisestil zu wählen.
         </p>
       </header>
 
@@ -79,7 +79,7 @@ export default function ProgramsPage() {
             <div className="mt-5 grid gap-6 md:grid-cols-2">
               <div>
                 <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">
-                  Best uses
+                  Beste Einsätze
                 </div>
                 <ul className="mt-3 space-y-2 text-sm text-[color:var(--em-muted)]">
                   {p.bestUses.map((b) => (
@@ -93,7 +93,7 @@ export default function ProgramsPage() {
 
               <div>
                 <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">
-                  Transfer notes
+                  Transfer-Notizen
                 </div>
                 <ul className="mt-3 space-y-2 text-sm text-[color:var(--em-muted)]">
                   {p.transferNotes.map((b) => (
@@ -110,8 +110,8 @@ export default function ProgramsPage() {
       </div>
 
       <div className="text-xs text-[color:var(--em-muted)]">
-        Next: dedicated program pages + search + structured fields (earn/redeem rates, alliances,
-        transfer partners).
+        Als Nächstes: eigene Programm-Seiten + Suche + strukturierte Felder (Earn/Redemption,
+        Allianzen, Transferpartner).
       </div>
     </div>
   );

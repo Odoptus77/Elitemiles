@@ -24,10 +24,10 @@ export default function DealsPage() {
     <div className="space-y-8">
       <header className="space-y-3">
         <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Deals</p>
-        <h1 className="font-display text-4xl">Sweet spots & promos</h1>
+        <h1 className="font-display text-4xl">Sweet Spots & Promos</h1>
         <p className="max-w-2xl text-[color:var(--em-muted)]">
-          Curated redemptions and opportunities you can actually use from Germany / DACH.
-          (Manual entries in v0.)
+          Kuratierte Einlösungen und Chancen, die du wirklich aus Deutschland / DACH nutzen kannst.
+          (In v0 noch manuell gepflegt.)
         </p>
       </header>
 
@@ -57,7 +57,7 @@ export default function DealsPage() {
       </div>
 
       <div className="text-xs text-[color:var(--em-muted)]">
-        Next: filters (airline/hotel/region/cabin), then Supabase-backed entries + admin UI.
+        Als Nächstes: Filter (Airline/Hotel/Region/Kabine) + Supabase-Backend inkl. Admin-UI.
       </div>
     </div>
   );

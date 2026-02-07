@@ -13,26 +13,26 @@ function rateValue(centsPerPoint: number): Rating {
     return {
       label: "—",
       color: "text-[color:var(--em-muted)]",
-      note: "Enter values to see a rating.",
+      note: "Gib Werte ein, um eine Bewertung zu sehen.",
     };
   }
   if (centsPerPoint >= 3.0)
     return {
       label: "Excellent",
       color: "text-[color:var(--em-gold)]",
-      note: "Strong value — often premium-cabin or peak cash pricing.",
+      note: "Sehr guter Wert – oft Premium-Kabine oder hoher Cash-Preis.",
     };
   if (centsPerPoint >= 2.0)
     return {
       label: "Good",
       color: "text-[color:var(--em-fg)]",
-      note: "Usually worth it if you’d pay cash for this trip.",
+      note: "Meist sinnvoll, wenn du diese Reise auch in Cash zahlen würdest.",
     };
   if (centsPerPoint >= 1.2)
     return {
       label: "Okay",
       color: "text-[color:var(--em-muted)]",
-      note: "Could be fine, but compare alternatives and flexibility.",
+      note: "Kann ok sein – aber Alternativen und Flexibilität prüfen.",
     };
   return {
     label: "Poor",
@@ -65,9 +65,9 @@ export default function RedemptionValuePage() {
     <div className="space-y-8">
       <header className="space-y-3">
         <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Tool</p>
-        <h1 className="font-display text-4xl">Redemption Value Calculator</h1>
+        <h1 className="font-display text-4xl">Einlösewert-Rechner</h1>
         <p className="max-w-2xl text-[color:var(--em-muted)]">
-          Compare cash price vs points (minus taxes/fees) to estimate value per point.
+          Vergleiche Cash-Preis mit Punkten (abzgl. Steuern/Gebühren), um den Wert pro Punkt zu schätzen.
         </p>
       </header>
 
@@ -75,7 +75,7 @@ export default function RedemptionValuePage() {
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
           <div className="grid gap-4">
             <label className="grid gap-2 text-sm text-[color:var(--em-muted)]">
-              Cash price (EUR)
+              Cash-Preis (EUR)
               <input
                 inputMode="decimal"
                 value={cashPrice}
@@ -86,7 +86,7 @@ export default function RedemptionValuePage() {
             </label>
 
             <label className="grid gap-2 text-sm text-[color:var(--em-muted)]">
-              Taxes & fees you still pay (EUR)
+              Steuern & Gebühren (EUR)
               <input
                 inputMode="decimal"
                 value={taxesFees}
@@ -97,7 +97,7 @@ export default function RedemptionValuePage() {
             </label>
 
             <label className="grid gap-2 text-sm text-[color:var(--em-muted)]">
-              Points / miles required
+              Benötigte Punkte/Meilen
               <input
                 inputMode="numeric"
                 value={points}
@@ -115,11 +115,11 @@ export default function RedemptionValuePage() {
         </div>
 
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
-          <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">Result</div>
+          <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">Ergebnis</div>
 
           <div className="mt-4 space-y-4">
             <div>
-              <div className="text-sm text-[color:var(--em-muted)]">Estimated value per point</div>
+              <div className="text-sm text-[color:var(--em-muted)]">Geschätzter Wert pro Punkt</div>
               <div className="mt-1 font-display text-5xl">
                 {result ? formatNumber(result.centsPerPoint) : "—"}
                 <span className="ml-2 text-lg text-[color:var(--em-muted)]">c/pt</span>
@@ -127,13 +127,13 @@ export default function RedemptionValuePage() {
             </div>
 
             <div className="rounded-xl border border-[color:var(--em-border)] bg-white p-4">
-              <div className="text-sm text-[color:var(--em-muted)]">Rating</div>
+              <div className="text-sm text-[color:var(--em-muted)]">Bewertung</div>
               <div className={`mt-1 text-2xl font-semibold ${rating.color}`}>{rating.label}</div>
               <div className="mt-2 text-sm text-[color:var(--em-muted)]">{rating.note}</div>
             </div>
 
             <div className="text-xs text-[color:var(--em-muted)]">
-              Formula: (cash price − taxes/fees) ÷ points.
+              Formel: (Cash-Preis − Steuern/Gebühren) ÷ Punkte.
             </div>
           </div>
         </div>

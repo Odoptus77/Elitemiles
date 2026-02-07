@@ -55,10 +55,10 @@ export default function TransferPartnerPage() {
     <div className="space-y-8">
       <header className="space-y-3">
         <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--em-muted)]">Tool</p>
-        <h1 className="font-display text-4xl">Transfer Partner Optimizer (Basic)</h1>
+        <h1 className="font-display text-4xl">Transferpartner (Basis)</h1>
         <p className="max-w-2xl text-[color:var(--em-muted)]">
-          MVP version: a curated rules list (Germany/DACH-oriented). Next we turn this into a
-          structured database with more currencies and partner logic.
+          MVP-Version: kuratierte Regeln (Deutschland/DACH). Als Nächstes wird daraus eine
+          strukturierte Datenbank mit mehr Währungen und Partnerlogik.
         </p>
       </header>
 
@@ -66,7 +66,7 @@ export default function TransferPartnerPage() {
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
           <div className="grid gap-4">
             <label className="grid gap-2 text-sm text-[color:var(--em-muted)]">
-              Points currency
+              Punktewährung
               <select
                 value={from}
                 onChange={(e) => setFrom(e.target.value as Currency)}
@@ -81,7 +81,7 @@ export default function TransferPartnerPage() {
             </label>
 
             <label className="grid gap-2 text-sm text-[color:var(--em-muted)]">
-              Target program (optional)
+              Zielprogramm (optional)
               <input
                 value={target}
                 onChange={(e) => setTarget(e.target.value)}
@@ -93,11 +93,11 @@ export default function TransferPartnerPage() {
         </div>
 
         <div className="rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
-          <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">Paths</div>
+          <div className="text-xs uppercase tracking-[0.28em] text-[color:var(--em-muted)]">Pfade</div>
 
           <div className="mt-4 space-y-3">
             {results.length === 0 ? (
-              <div className="text-sm text-[color:var(--em-muted)]">No paths found yet for that filter.</div>
+              <div className="text-sm text-[color:var(--em-muted)]">Noch keine passenden Pfade gefunden.</div>
             ) : (
               results.map((p, idx) => (
                 <div
