@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand */
+  --em-gold: #cfae70;
+  --em-emerald: #0f3d33;
+
+  /* Theme (dark by default) */
+  --em-bg: #070707;
+  --em-fg: #f3f1ec;
+  --em-muted: rgba(243, 241, 236, 0.7);
+  --em-card: rgba(255, 255, 255, 0.04);
+  --em-border: rgba(255, 255, 255, 0.10);
+}
+
+@theme inline {
+  --font-sans: var(--font-em-sans);
+  --font-display: var(--font-em-display);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-em-sans), system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-em-display), ui-serif, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--em-gold) 35%, black);
+}
