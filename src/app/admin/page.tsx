@@ -9,6 +9,7 @@ export default function AdminHome() {
   const [email, setEmail] = useState("");
   const [sending, setSending] = useState(false);
   const [sessionEmail, setSessionEmail] = useState<string | null>(null);
+  const [sessionUserId, setSessionUserId] = useState<string | null>(null);
   const [status, setStatus] = useState<string | null>(null);
 
   useEffect(() => {
@@ -16,10 +17,12 @@ export default function AdminHome() {
 
     supabase.auth.getSession().then(({ data }) => {
       setSessionEmail(data.session?.user.email ?? null);
+      setSessionUserId(data.session?.user.id ?? null);
     });
 
     const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
       setSessionEmail(session?.user.email ?? null);
+      setSessionUserId(session?.user.id ?? null);
     });
 
     return () => sub.subscription.unsubscribe();
@@ -30,6 +33,7 @@ export default function AdminHome() {
     .map((s) => s.trim().toLowerCase())
     .filter(Boolean);
 
+  // Optional client-side gate. Real access control should be done via Supabase RLS.
   const allowed =
     !!sessionEmail && (allowlist.length === 0 || allowlist.includes(sessionEmail.toLowerCase()));
 
@@ -133,6 +137,12 @@ export default function AdminHome() {
           <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[color:var(--em-border)] bg-[color:var(--em-card)] p-6">
             <div className="text-sm text-[color:var(--em-muted)]">
               Eingeloggt als <span className="font-semibold text-[color:var(--em-fg)]">{sessionEmail}</span>
+              {sessionUserId ? (
+                <>
+                  <span className="mx-2 text-[color:var(--em-muted)]">•</span>
+                  <span className="text-xs">User ID: <code>{sessionUserId}</code></span>
+                </>
+              ) : null}
             </div>
             <button
               onClick={signOut}
